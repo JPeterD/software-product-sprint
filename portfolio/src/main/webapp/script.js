@@ -13,7 +13,8 @@
 // limitations under the License.
 
 /**
- * Adds a random fact to the page.
+ * Adds a random fact to the page. 
+ * TODO: Currently not in use on portfolio will utilize it later.
  */
 function addRandomFact() {
   const facts =
