@@ -4,10 +4,12 @@
     padding-top: 20px;
     width: 650px;
     color: rgb(255, 255, 255);
+    text-align: center;
   }
   
   body {
       background-color: rgb(33, 43, 54);
+      font-family: sans-serif;
   }
   
   h2 {
@@ -46,8 +48,40 @@
       color: white;
   }
   
-  .navbar a.active {
-      background-color: rgb(0, 123, 85);
-      color: white;
+  #projects {
+      text-align: center;
   }
   
+  #lino {
+      color: rgb(200, 250, 205);
+      font-size: 27px;
+  }
+  
+  #linoIcon {
+      height: 150px
+  }
+  
+  #linoContent {
+      font-size: 19px;
+  }
+  
+  #linoSite {
+      height: 300px;
+  }
+  
+  #gramblingIcon {
+      height: 150px;
+  }
+  
+  .contactIcons {
+      height: 20px;
+  }
+  
+  ul {
+      list-style: none;
+      text-align: left;
+  }
+  
+  li {
+      margin: 10px;
+  }
