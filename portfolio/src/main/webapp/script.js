@@ -14,21 +14,60 @@
 
 /**
  * Adds a random fact to the page. 
- * TODO: Currently not in use on portfolio will utilize it later.
  */
 function addRandomFact() {
-  const facts =
-      [
-          'I am learning to play the piano!', 
-          'I am from the Commonwealth of Dominica.',
-          'I love Gouda Cheese.',
-          'I love reading web novels.'
-        ];
+    const facts =
+        [
+            'I am learning to play the piano!', 
+            'I am from the Commonwealth of Dominica.',
+            'I love Gouda Cheese.',
+            'I love reading web novels.',
+          ];
+  
+    // Pick a random fact.
+    const fact = facts[Math.floor(Math.random() * facts.length)];
+  
+    // Add it to the page.
+    const factContainer = document.getElementById('fact-container');
+    factContainer.innerText = fact;
+  }
 
-  // Pick a random fact.
-  const fact = facts[Math.floor(Math.random() * facts.length)];
 
-  // Add it to the page.
-  const factContainer = document.getElementById('fact-container');
-  factContainer.innerText = fact;
-}
+/** 
+ * SlideShow Functions
+*/
+
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+  }
+
+  function curSlide(n) {
+      showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slides");
+    let dots = document.getElementsByClassName("periods");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
