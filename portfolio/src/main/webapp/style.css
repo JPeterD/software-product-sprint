@@ -85,3 +85,104 @@
   li {
       margin: 10px;
   }
+  
+  #factButton {
+      background-color: rgb(8, 12, 10);
+      border-radius: 8px;
+      padding: 10px 50px 10px 50px;
+      color:#f2f2f2;
+      font-size: 30px;
+      cursor: pointer;
+  }
+  
+  #fact-container {
+      font-family: Arial;
+      margin-top: 20px;
+      padding: 10px;
+      font-size: 30px;
+      color:rgb(253, 253, 253);
+      border: 10px solid rgb(0, 123, 85);
+  }
+  
+  #randomFacts {
+      margin-top: 50px;
+  }
+  
+  .slideshow {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+  }
+  
+  .slides {
+      display: none;
+  }
+  
+  .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+  }
+  
+  .prev {
+      left: 0;
+  }
+  .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+  }
+  
+  .caption {
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+  }
+  
+  .numberSlide {
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+      color: black;
+  }
+  
+  .period {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+  
+  .active, .period:hover {
+      background-color: #717170;
+  }
+  
+  .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+      from {opacity: .4;}
+      to {opacity: 1;}
+  }
