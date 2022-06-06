@@ -31,6 +31,7 @@
       top: 0;
       position: fixed;
       width: 100%;
+      z-index: 1;
   }
   
   .navbar a {
@@ -185,4 +186,42 @@
   @keyframes fade {
       from {opacity: .4;}
       to {opacity: 1;}
+  }
+  
+  #formSubmit {
+      padding: 5px 16px;
+      margin-top: 10px;
+      text-decoration: none;
+      font-size: 20px;
+      background-color: rgb(0, 171, 85);
+      color: #f2f2f2;
+      text-align: center;
+      border-radius: 8px;
+      border: 2px solid rgb(0, 171, 85);;
+  }
+  
+  textarea {
+      height: 150px;
+      width: 500px;
+      background: #85868c;
+      font-size: 20px;
+  }
+  
+  .textbox{
+      width:100%;
+      font-size: 20px;
+      padding: 8px 0;
+      margin: 8px 0;
+      border-bottom: 1px solid rgb(0, 171, 85);
+  }
+  
+  .textbox input {
+      border: none;
+      outline: none;
+      background: none;
+      color: white;
+      font-size: 20px;
+      width: 80%;
+      margin: 0 10px;
+      display: block;
   }

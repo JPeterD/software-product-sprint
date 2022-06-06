@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About Me</a>
+        <a  href="projects.html">Projects</a>
+        <a href="favouriteAnimals.html">Favourite Animals</a>
+        <a class="current" href="contact.html">Contact Me</a> 
+    </div>
+    <div id="content">
+        <h1>Contact Me</h1>
+        <form action="/form-handler" method="POST">
+            <p>Name:</p>
+            <div class="textbox">
+                <input type="text" id="name" name="name">
+            </div>
+            <br />
+            <p>Email:</p>
+            <div class="textbox">
+                <input type="text" id="email" name="email">
+            </div>
+            <br />
+            <p>Your message:</p>
+            <textarea name="message">Enter your message here!</textarea>
+            <br />
+            <input id="formSubmit" type="submit">
+      </form>
+    </div>
+  </body>
+</html>
