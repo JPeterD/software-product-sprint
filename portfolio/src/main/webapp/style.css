@@ -225,3 +225,7 @@
       margin: 0 10px;
       display: block;
   }
+
+  #translate-result {
+      margin-top: 10px;
+  }

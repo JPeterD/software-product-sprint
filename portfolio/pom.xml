@@ -26,7 +26,7 @@
       <artifactId>javax.servlet-api</artifactId>
       <version>4.0.1</version>
     </dependency>
-
+    
     <!-- Jetty -->
     <dependency>
       <groupId>org.eclipse.jetty</groupId>
@@ -38,8 +38,16 @@
       <artifactId>jetty-annotations</artifactId>
       <version>${jetty.version}</version>
     </dependency>
-  </dependencies>
 
+    <!-- Google Translate API-->
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-translate</artifactId>
+        <version>1.70.0</version>
+    </dependency>
+  </dependencies>
+  
+  
   <build>
     <plugins>
       <!-- Copy static resources like html files into the output jar file. -->
