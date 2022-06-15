@@ -39,6 +39,20 @@
       <version>${jetty.version}</version>
     </dependency>
 
+    <!-- Google Datastore -->
+    <dependency>
+        <groupId>com.google.cloud</groupId>
+        <artifactId>google-cloud-datastore</artifactId>
+        <version>1.104.0</version>
+    </dependency>
+
+    <!-- JSoup -->
+    <dependency>
+      <groupId>org.jsoup</groupId>
+      <artifactId>jsoup</artifactId>
+      <version>1.14.2</version>
+    </dependency>
+
     <!-- Google Translate API-->
     <dependency>
         <groupId>com.google.cloud</groupId>
