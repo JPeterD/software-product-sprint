@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="translator.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="favouriteAnimals.html">Favourite Animals</a>
+        <a class="current" href="translate.html">Translator</a>
+        <a href="contact.html">Contact Me</a> 
+    </div>
+    <div id="content">
+       <h1>Translate Text</h1>
+       <div class="language-selector">
+           <select id="language">
+               <option value="en">English</option>
+               <option value="es">Spanish</option>
+               <option value="zh">Chinese</option>
+               <option value="fr">French</option>
+           </select>
+       </div>
+       <div class="text-translate">
+           <textarea id="text"></textarea>
+       </div>
+       <button onclick="requestTranslate();">Translate</button>
+       <div id="translate-result"></div>
+    </div>
+  </body>
+</html>
